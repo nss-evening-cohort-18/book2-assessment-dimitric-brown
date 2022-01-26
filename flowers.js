@@ -26,7 +26,13 @@ const addFlower = (flowerObject) => {
         object, the object should then be put into the
         `flowers` array.
     */
+    const lastindex = flowers.length - 1
+    const currentLastFlower = flowers[lastindex]
+    const maxId = currentLastFlower.id
+    const idForNewFlower = maxId + 1
 
+    flowerObject.id = idForNewFlower
+    flowers.push(flowerObject)
 
 }
 
