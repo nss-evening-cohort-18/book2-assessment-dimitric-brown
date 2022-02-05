@@ -8,7 +8,7 @@ const flowers = [
 
     {
         id: 2,
-        color: "yRed",
+        color: "Red",
         species: "Tulip",
         price: 1.10
     }
@@ -47,7 +47,11 @@ const findExpensiveFlowers = () => {
         greater than or equal to 1.00, it should be
         added to the `expensiveFlowers` array.
     */
-
+    for (const flower of flowers) {
+        if (flower.price >= 1.00) {
+            expensiveFlowers.push(flower)
+        }
+    }
 
 
 
